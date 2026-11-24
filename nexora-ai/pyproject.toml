@@ -1,0 +1,25 @@
+[project]
+name = "nexora-ai"
+version = "0.1.1-phase0"
+description = "NEXORA AI — Phase 0 foundation (remediated)"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.5",
+    "fastapi>=0.110",
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+# Phase 0: fail on real issues; ignore style noise until broader cleanup
+select = ["E9", "F63", "F7", "F82"]
+ignore = []

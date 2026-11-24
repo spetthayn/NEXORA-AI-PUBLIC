@@ -1,0 +1,15 @@
+{
+  "name": "nexora-ai",
+  "private": true,
+  "version": "0.0.1-phase0",
+  "description": "NEXORA AI Phase 0 — contract generation tooling",
+  "scripts": {
+    "generate:contracts": "bash scripts/generate_contracts.sh",
+    "typecheck": "tsc -p packages/api_contracts/typescript/tsconfig.json",
+    "test:unit": "PYTHONPATH=. pytest tests/unit -v"
+  },
+  "devDependencies": {
+    "openapi-typescript": "7.4.4",
+    "typescript": "5.4.5"
+  }
+}
