@@ -1,0 +1,4 @@
+parts=25
+format=base64
+archive=nexora-ai-src.tar.gz
+sha256=PLACEHOLDER
